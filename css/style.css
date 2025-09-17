@@ -1,0 +1,177 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8d4fe4 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .profile-pic {
+      width: 120px;
+  height: 120px;
+
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .info-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .contact-details {
+            font-weight: bold;
+        }
+
+        .company-name {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+
+
+ @media (min-width: 500px) {
+            .contact-card {
+                max-width: 500px;
+                padding: 40px;
+            }
+
+            .card-content {
+                gap: 25px;
+            }
+
+            .profile-section {
+                flex-direction: row;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            .profile-info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                flex: 1;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+                flex-shrink: 0;
+            }
+
+            .info-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+
+            .info-item {
+                padding: 18px;
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .contact-card {
+                max-width: 800px;
+                padding: 40px 50px;
+            }
+
+            .card-content {
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                min-width: 200px;
+            }
+
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .info-section {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 15px;
+            }
+
+            .contact-row {
+                display: flex;
+                gap: 15px;
+            }
+
+            .contact-row .info-item {
+                flex: 1;
+            }
+
+            .company-name {
+                margin-top: 10px;
+            }
+
+            .info-item {
+                padding: 20px;
+                font-size: 16px;
+            }
+        }
+
+      
